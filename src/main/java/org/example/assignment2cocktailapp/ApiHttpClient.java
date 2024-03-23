@@ -1,12 +1,6 @@
 package org.example.assignment2cocktailapp;
 import com.google.gson.*;
-import com.google.gson.reflect.TypeToken;
-import javafx.beans.property.SimpleStringProperty;
-import javafx.beans.property.StringProperty;
 import javafx.collections.FXCollections;
-import javafx.collections.ObservableList;
-
-import java.lang.reflect.Type;
 import java.net.http.HttpClient;
 import java.io.IOException;
 import java.net.URI;
@@ -14,7 +8,6 @@ import java.net.URISyntaxException;
 import java.net.http.HttpRequest;
 import java.net.http.HttpResponse;
 import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.List;
 
 //this class is used to fetch the API data
