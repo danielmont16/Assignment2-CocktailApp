@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<VBox alignment="CENTER" prefHeight="447.0" prefWidth="549.0" spacing="20.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.assignment2cocktailapp.CocktailController">
+    <padding>
+        <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+    </padding>
+   <Label text="The Cocktail App" />
+   <Separator prefWidth="200.0" />
+   <AnchorPane prefHeight="381.0" prefWidth="441.0">
+      <children>
+      
+          <Label fx:id="welcomeText" layoutY="7.0" text="List all cocktails by first letter" />
+          <Button layoutX="198.0" layoutY="45.0" onAction="#onButtonClick" text="Search" />
+         <TextField fx:id="firstLetter" layoutY="45.0" prefHeight="25.0" prefWidth="190.0" promptText="Enter a letter between a to z" />
+         <TableView fx:id="cocktailTable" layoutX="1.0" layoutY="94.0" prefHeight="212.0" prefWidth="297.0">
+           <columns>
+               <TableColumn fx:id="idDrinkColumn" prefWidth="72.0" text="Cocktail Id" />
+             <TableColumn fx:id="strDrinkColumn" minWidth="0.0" prefWidth="102.0" text="Cocktail name" />
+               <TableColumn fx:id="strCategoryColumn" prefWidth="122.0" text="Cocktail category" />
+           </columns>
+         </TableView>
+         <ImageView fx:id="mainImage" fitHeight="309.0" fitWidth="200.0" layoutX="332.0" layoutY="24.0" pickOnBounds="true" preserveRatio="true" />
+         <Label fx:id="cocktailCount" layoutX="162.0" layoutY="316.0" prefHeight="17.0" prefWidth="33.0" text="0">
+            <font>
+               <Font size="11.0" />
+            </font></Label>
+         <Label layoutY="316.0" text="Cocktail Found:">
+            <font>
+               <Font size="11.0" />
+            </font>
+         </Label>
+      </children>
+   </AnchorPane>
+</VBox>

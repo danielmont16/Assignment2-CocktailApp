@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.assignment2cocktailapp.SecondController">
+   <children>
+      <Label fx:id="id" layoutX="149.0" layoutY="50.0" prefHeight="17.0" prefWidth="110.0" />
+      <Button fx:id="button" layoutX="329.0" layoutY="344.0" mnemonicParsing="false" onAction="#switchToScene1" text="Back to main" />
+      <ImageView fx:id="img" fitHeight="172.0" fitWidth="190.0" layoutX="329.0" layoutY="74.0" pickOnBounds="true" preserveRatio="true" />
+      <Label layoutX="60.0" layoutY="91.0" text="Instructions" />
+      <TextArea fx:id="instructions" editable="false" layoutX="59.0" layoutY="123.0" prefHeight="116.0" prefWidth="215.0" wrapText="true" />
+      <Label layoutX="59.0" layoutY="50.0" text="Drink id" />
+      <Label layoutX="331.0" layoutY="50.0" text="Cocktail Picture" />
+      <Label layoutX="329.0" layoutY="255.0" text="Cocktail Glass Style" />
+      <Label layoutX="62.0" layoutY="255.0" text="Ingredients" />
+      <TextArea fx:id="ingredients" editable="false" layoutX="59.0" layoutY="287.0" prefHeight="82.0" prefWidth="215.0" wrapText="true" />
+      <TextArea fx:id="cocktailGlass" editable="false" layoutX="329.0" layoutY="285.0" prefHeight="39.0" prefWidth="180.0" />
+      <Separator layoutX="61.0" layoutY="35.0" prefHeight="5.0" prefWidth="504.0" />
+      <Label fx:id="cocktailName" layoutX="227.0" layoutY="14.0" prefHeight="17.0" prefWidth="147.0" />
+   </children>
+</AnchorPane>

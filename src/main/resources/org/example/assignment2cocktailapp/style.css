@@ -1,0 +1,37 @@
+.root{
+    -fx-background: #FFF7F1;
+    -fx-font-family: "Helvetica";
+    -fx-font-size: 10pt;
+
+   }
+
+.label{
+     -fx-font-size: 10pt;
+      -fx-font: bold 12pt "Arial";
+
+   }
+
+ .button{
+    -fx-background-color: #6D2932;
+    -fx-text-fill: rgb(255, 255, 255);
+ }
+
+ .button:hover{
+     -fx-background-color: #BF3131;
+ }
+
+
+.table-view .column-header {
+
+    -fx-background-color: #6D2932;
+
+ }
+
+ .table-view .column-header .label{
+   -fx-text-fill: white;
+   -fx-font-size: 10pt;
+
+ }
+
+
+
