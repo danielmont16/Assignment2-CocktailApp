@@ -14,7 +14,6 @@ import javafx.stage.Stage;
 
 import java.io.IOException;
 import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.List;
 
 public class SecondController {
@@ -59,8 +58,8 @@ public class SecondController {
             cocktailName.setText(element.getStrDrink());
         });
 
-        List<String> ingredient1 = new ArrayList<>();
-        List<String> measures = new ArrayList<>();
+        List<String> ingredient1;
+        List<String> measures;
 
         ingredient1 = cocktailList.get(0).getIngredients();
         measures = cocktailList.get(0).getMeasures();
