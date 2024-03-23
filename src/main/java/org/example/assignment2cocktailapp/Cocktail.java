@@ -5,19 +5,20 @@ import javafx.beans.property.StringProperty;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 
+//This is the cocktail class
 public class Cocktail {
 
+    //the following are the properties define for this class
     private StringProperty idDrink = null;
     private StringProperty strDrink = null;
     private StringProperty strCategory = null;
     private StringProperty strInstructions =null;
     private StringProperty strGlass = null;
-
     private StringProperty strDrinkThumb = null;
-
     private ObservableList<String> ingredients = null;
     private ObservableList<String> measures = null;
 
+    //this is the constructor
     public Cocktail() {
         this.idDrink = new SimpleStringProperty();
         this.strDrink = new SimpleStringProperty();
@@ -29,26 +30,6 @@ public class Cocktail {
         this.measures = FXCollections.observableArrayList();
 
     }
-
-    // Getters and setters for ingredients
-    public ObservableList<String> getIngredients() {
-        return ingredients;
-    }
-
-    public void setIngredients(ObservableList<String> ingredients) {
-        this.ingredients = ingredients;
-    }
-
-    // Getters and setters for measures
-    public ObservableList<String> getMeasures() {
-        return measures;
-    }
-
-    public void setMeasures(ObservableList<String> measures) {
-        this.measures = measures;
-    }
-
-
 
     //Getters
     public String getIdDrink() {
@@ -72,7 +53,6 @@ public class Cocktail {
         return strDrink.get();
     }
 
-    // Define the property getter for TableView
     public StringProperty strDrinkProperty() {
 
         return strDrink;
@@ -102,6 +82,14 @@ public class Cocktail {
         return strDrinkThumb;
     }
 
+    public ObservableList<String> getIngredients() {
+        return ingredients;
+    }
+
+    public ObservableList<String> getMeasures() {
+        return measures;
+    }
+
 
     // Setters
     public void setIdDrink(String idDrink) {
@@ -128,6 +116,12 @@ public class Cocktail {
         this.strDrinkThumb.set(strDrinkThumb);
     }
 
+    public void setIngredients(ObservableList<String> ingredients) {
+        this.ingredients = ingredients;
+    }
 
+    public void setMeasures(ObservableList<String> measures) {
+        this.measures = measures;
+    }
 
 }

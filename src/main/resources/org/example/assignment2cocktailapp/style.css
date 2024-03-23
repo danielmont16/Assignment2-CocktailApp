@@ -1,3 +1,6 @@
+/*
+using root selector to apply style to the scenes
+*/
 .root{
     -fx-background: #FFF7F1;
     -fx-font-family: "Helvetica";
@@ -5,27 +8,44 @@
 
    }
 
+/*
+using label selector change font size
+*/
 .label{
      -fx-font-size: 10pt;
       -fx-font: bold 12pt "Arial";
 
    }
 
+/*
+using button selector to apply background color and text color
+*/
+
  .button{
     -fx-background-color: #6D2932;
     -fx-text-fill: rgb(255, 255, 255);
  }
 
+/*
+using button and hover to change the  button's color
+*/
  .button:hover{
      -fx-background-color: #BF3131;
  }
 
+/*
+changing the table header's background color
+*/
 
 .table-view .column-header {
 
     -fx-background-color: #6D2932;
 
  }
+
+/*
+changing the table header's text color
+*/
 
  .table-view .column-header .label{
    -fx-text-fill: white;
