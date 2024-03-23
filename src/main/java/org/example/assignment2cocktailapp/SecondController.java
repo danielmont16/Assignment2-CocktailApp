@@ -21,7 +21,6 @@ public class SecondController {
     private Stage stage;
     private Scene scene;
     private Parent root;
-    private String idDrink;
 
     @FXML
     private Label id;
